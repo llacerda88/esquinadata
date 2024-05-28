@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquina da Ta</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Georgia&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #8b0000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #menu h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+
+        .menu-item {
+            border: 1px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #000;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-bottom: 10px;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            font-family: 'Georgia', serif;
+        }
+
+        .menu-item p {
+            margin: 10px;
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #8b0000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            font-size: 1em;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 2em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ddd;
+        }
+
+        .whatsapp-icon-footer {
+            font-size: 2.5em;
+            color: #25d366;
+            margin-top: 10px;
+        }
+
+        .whatsapp-icon-home {
+            font-size: 2.5em;
+            color: #25d366;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <img src="./Fotos/logopreto.jpg" alt="Logotipo Esquerda" style="width: 200px; height: auto; margin: 0 5px;">
+
+
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Bar e restaurante na esquina, onde todos amigos/vizinhos se encontram🍻</h2>
+    <h2>Pratos maravilhosos feitos pela Chef Tamara Guedes😉</h2>
+    <p>✨Rua Guaianases, 1461</p>
+    <p>Faça seu pedido pelo Whatsapp 11 945231640 😉</p>
+    <a href="https://wa.me/5511945231640" target="_blank" class="whatsapp-icon-footer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</section>
+
+<section id="menu">
+    <h2>Nosso Menu</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="./Fotos/1716303810880.jpg" alt="Imagem do Prato 1">
+            <h3>Prato 1</h3>
+            <p>Descrição do prato 1.</p>
+            <p>Preço: R$ 20,00</p>
+        </div>
+        <div class="menu-item">
+            <img src="./Fotos/1716303810885.jpg" alt="Imagem do Prato 2">
+            <h3>Prato 2</h3>
+            <p>Descrição do prato 2.</p>
+            <p>Preço: R$ 20,00</p>
+        </div>
+        <div class="menu-item">
+            <img src="./Fotos/1716303810889.jpg" alt="Imagem do Prato 3">
+            <h3>Prato 3</h3>
+            <p>Descrição do prato 3.</p>
+            <p>Preço: R$ 20,00</p>
+        </div>
+        <!-- Adicione mais itens de menu conforme necessário -->
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contato</h2>
+    <p>Email: tamaraguedes49@gmail.com</p>
+    <p>Telefone: (11) 11 945231640</p>
+</section>
+
+<footer>
+    <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=61559540228429" target="_blank" class="fab fa-facebook"></a>
+        <a href="https://www.instagram.com/esquina.da.ta/" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://wa.me/5511945231640" target="_blank" class="whatsapp-icon-footer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Set all images to the same width and height
+        $('.menu-item img').css({
+            'width': '100%',
+            'height': 'auto',
+            'object-fit': 'cover'
+        });
+
+        // Optionally, you can use a fixed height for all images
+        var fixedHeight = 200;
+        $('.menu-item img').height(fixedHeight);
+    });
+</script>
+</body>
+</html>
